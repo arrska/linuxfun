@@ -1,0 +1,7 @@
+lias cman='man --html=chromium-browser'
+alias iiärcee='ssh -t shell screen -dr'
+alias ls='ls -lah --color=auto'
+alias manh='man --html=chromium-browser'
+alias mman='man --html=firefox'
+alias o='ls -latr'
+

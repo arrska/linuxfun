@@ -1,0 +1,34 @@
+ale@melkki:~/linuxfun/wk1$ rsync --archive --stats ~tkt_cam/public_html/2011/10/30/ exactumcam2/
+
+Number of files: 25
+Number of files transferred: 24
+Total file size: 11179311 bytes
+Total transferred file size: 11179311 bytes
+Literal data: 11179311 bytes
+Matched data: 0 bytes
+File list size: 467
+File list generation time: 0.007 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 11182146
+Total bytes received: 471
+
+sent 11182146 bytes  received 471 bytes  7455078.00 bytes/sec
+total size is 11179311  speedup is 1.00
+aale@melkki:~/linuxfun/wk1$ rsync --archive --stats ~tkt_cam/public_html/2011/10/30/ exactumcam/
+
+Number of files: 25
+Number of files transferred: 0
+Total file size: 11179311 bytes
+Total transferred file size: 0 bytes
+Literal data: 0 bytes
+Matched data: 0 bytes
+File list size: 467
+File list generation time: 0.002 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 476
+Total bytes received: 12
+
+sent 476 bytes  received 12 bytes  976.00 bytes/sec
+total size is 11179311  speedup is 22908.42
+aale@melkki:~/linuxfun/wk1$ 
+

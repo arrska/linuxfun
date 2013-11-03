@@ -1,0 +1,2 @@
+if no aliases in .bash_profile, sshed shell results in aliaslessness
+nonlogin = execute commands on remote sytem with single command

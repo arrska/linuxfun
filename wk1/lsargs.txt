@@ -1,0 +1,16 @@
+my favourite ls args
+
+-a dotfiles and current directory listed as well
+-l more readable format + permissions, sizes etc.
+-h if intrested in filesizes
+-R sometimes useful for small directory trees
+-S 
+-t userful for finding recently edited files
+-r reverse order
+
+--color=auto
+rarely useful, but nice
+
+my ls alias:
+alias ls='ls -al --color=auto -h'
+
