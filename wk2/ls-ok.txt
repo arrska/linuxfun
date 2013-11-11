@@ -1,0 +1,5 @@
+../:
+total 8.0K
+-rw------- 1 aale tkol    0 Nov  3 21:23 README.md
+drwx------ 4 aale tkol 4.0K Nov  4 14:12 wk1
+drwx------ 2 aale tkol 4.0K Nov 10 23:56 wk2

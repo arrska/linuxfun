@@ -1,0 +1,11 @@
+$MACHTYPE
+type of system
+
+$PATH
+list of paths
+
+$RANDOM
+random number
+
+$HOSTNAME
+name of the host

@@ -1,0 +1,4 @@
+ls ~ | wc -l
+#or
+ls ~ >>file.txt
+wc -l <file.txt
