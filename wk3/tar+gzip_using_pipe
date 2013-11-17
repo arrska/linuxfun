@@ -1,0 +1,1 @@
+tar cf - ../wk1/*.sh ../wk2/*sh | gzip - >files.tar.gzip

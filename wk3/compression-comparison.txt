@@ -1,0 +1,3 @@
+20K script-archive.tar
+894 script-archive.tar.bz2
+850 script-archive.tar.gz
