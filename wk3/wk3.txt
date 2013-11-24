@@ -1,0 +1,48 @@
+Not glue but tar
+wk3/comparison/
+
+without shortcut
+tar -c *files | bzip2 -z >compressed-archive.tar.bz2
+
+Local and network file systems
+cd /tmp
+
+Fetch and extract
+wget -O - http://wiki.helsinki.fi/download/attachments/124126879/lost24-monitor-temps-and-fans-v2.tar.bz2 | tar xj
+
+No more disk space
+ssh ukko043.hpc "bzip2 -d -c /cs/ukko/scratch/lost24-monitor-temps-and-fans-v2.tar.bz2" | tar x
+
+Ready, steady, go
+time wget -O - http://wiki.helsinki.fi/download/attachments/124126879/lost24-monitor-temps-and-fans-v2.tar.bz2 | tar xj
+real	0m4.515s
+user	0m4.672s
+sys	0m1.732s
+
+time ssh ukko043.hpc "bzip2 -d -c /cs/ukko/scratch/lost24-monitor-temps-and-fans-v2.tar.bz2" | tar x
+
+real	0m34.044s
+user	0m11.969s
+sys	0m5.660s
+
+
+The monitor data set
+grep and cut
+why rev?
+proc-temp.sh
+
+Don't run with scissors
+rewrite-delimiter.sh
+
+Too long, didn't read
+find -name *temps.txt -exec grep PROCESSOR_ZONE {} +
+
+Escape to a true friend
+lost24/shellfail
+
+Intro to loops
+The Immelmann
+hipstafy.sh 18
+
+Hottest day
+hottest.sh

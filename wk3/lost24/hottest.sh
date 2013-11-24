@@ -8,7 +8,6 @@ do
 	for file in $daydir/*/hp-temps.txt
 	do
 		daytemp=$(grep -h PROCESSOR_ZONE $file | cut -c31-33)
-		#echo $daytemp
 		#daytemp=$(grep -h PROCESSOR_ZONE $file | sed -e 's/\(\/\)\|\(\ \)\+/,/g' | cut --delimiter="," --field=3 | sed -e 's/C//g')
 		
 		if [ $daytemp -gt $t ]; then

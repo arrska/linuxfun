@@ -1,6 +1,0 @@
-
-    find /path/to/lost24/monitor/2011.12.25 -name *temps.txt
-    find /path/to/lost24/monitor/2011.12.25 -name '*temps.txt'
-
-
-first one fails if the folder /path/to/lost24/monitor/2011.12.25 contains more than allowed amount of files ending temps.txt
