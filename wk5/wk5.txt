@@ -1,0 +1,13 @@
+Counting in your head
+average.sh
+
+Gone in 60 Seconds
+minmax-megahot.sh
+??????
+
+Hipstafy-dropbox
+hipstafy-wait.sh
+
+Summoning daemons
+hipstafy-daemon.sh
+

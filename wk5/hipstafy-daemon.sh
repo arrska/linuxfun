@@ -23,7 +23,7 @@ stop_daemon() {
 		rm hipsta.pid
 		echo Hipstafy daemon stopped
 	else
-		echo Daemon is not running
+		echo Hipstafy daemon is not running
 	fi
 }
 

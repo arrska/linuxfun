@@ -1,7 +1,7 @@
 #!/bin/bash
 #get max temp
 
-find ../lost24/monitor/ -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | sed -e 's/\(\/\)\|\(\ \)\+/,/g' | rev | cut -d, -f9,8,5 | rev | sed -e 's/,/ /g' | sed -e 's/C//g' | sed -e 's/\ /\n/g' | \
+find $1 -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | sed -e 's/\(\/\)\|\(\ \)\+/,/g' | rev | cut -d, -f9,8,5 | rev | sed -e 's/,/ /g' | sed -e 's/C//g' | \
 { 
 	hd=
 	ht=
@@ -9,7 +9,7 @@ find ../lost24/monitor/ -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | se
 	cd=
 	ct=
 	cold=99
-	while read -r day ; read -r time; read -r t
+	while read -r day time t
 	do
 		if [ $t -lt $cold ]
 		then

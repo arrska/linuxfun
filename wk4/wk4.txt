@@ -2,3 +2,23 @@ Longcat
 longcat.sh
 
 Daily maximum
+max-temp.sh
+
+...in TSV format
+in-tsv-format.sh
+
+Daily maximums redux
+daily-maximums-redux.sh
+
+Fast draws with GnuPlot
+max-daliy-temps.eps
+
+Winter is Coming
+min-temp.sh
+
+I didn't see that one coming
+hptemps-daily-minmax.p
+minmax-daily-temps.eps
+
+And that's a wrap
+find-max-or-min.sh
