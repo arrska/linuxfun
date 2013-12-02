@@ -8,6 +8,7 @@ start_daemon() {
 	if [ -e $pidfile ] && kill -0 $(cat $pidfile) 2>/dev/null
 	then
 		echo Daemon is already running
+		exit 1
 	else
 		nohup ./hipstafy-wait.sh "$boxfolder" 2>>hipstafy_err.log 1>>hipstafy.log &
 		
@@ -24,6 +25,7 @@ stop_daemon() {
 		echo Hipstafy daemon stopped
 	else
 		echo Hipstafy daemon is not running
+		exit 1
 	fi
 }
 
