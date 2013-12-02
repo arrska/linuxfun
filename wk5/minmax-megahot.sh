@@ -1,7 +1,8 @@
 #!/bin/bash
 #get max temp
 
-find $1 -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | sed -e 's/\(\/\)\|\(\ \)\+/,/g' | rev | cut -d, -f9,8,5 | rev | sed -e 's/,/ /g' | sed -e 's/C//g' | \
+# sed -e 's/.*\/\([0-9]*\.[0-9]*\.[0-9]*\)\/\([0-9]*:[0-9]*\).*PROCESSOR_ZONE *\([0-9]\+\)C.*/\1\ \2 \3/g'
+find $1 -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + |  sed -e 's/.*\/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\)\/\([0-9]*:[0-9]*\).*PROCESSOR_ZONE *\([0-9]\+\)C.*/\1\.\2\.\3 \4 \5/g' | \
 { 
 	hd=
 	ht=
@@ -11,6 +12,7 @@ find $1 -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | sed -e 's/\(\/\)\|
 	cold=99
 	while read -r day time t
 	do
+		#echo $day $time $t
 		if [ $t -lt $cold ]
 		then
 			ct=$time
