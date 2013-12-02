@@ -13,14 +13,14 @@ find ../lost24/monitor/ -name hp-temps.txt -exec grep "PROCESSOR_ZONE" {} + | se
 	do
 		if [ $t -lt $cold ]
 		then
-			ht=$time
-			hd=$day
+			ct=$time
+			cd=$day
 			cold=$t
 		fi
 		if [ $t -gt $hot ]
 		then
-			ct=$time
-			cd=$day
+			ht=$time
+			hd=$day
 			hot=$t
 		fi
 	done
